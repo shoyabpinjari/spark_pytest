@@ -1,7 +1,8 @@
+from pyspark.sql import SparkSession
 from test_cases.conftest import read_file
 from pyspark.sql.functions import *
 from test_cases.conftest import expected_schema
-
+spark = SparkSession.builder.master("local").appName("Pytest ETL").getOrCreate()
 
 source = r"C:\Users\Admin\PycharmProjects\pythonProject\spark_pytest\files\Employees_Source.csv"
 target = r"C:\Users\Admin\PycharmProjects\pythonProject\spark_pytest\files\Employees_Target.csv"

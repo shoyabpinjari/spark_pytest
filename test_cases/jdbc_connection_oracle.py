@@ -19,17 +19,3 @@ df = (spark.read.format("jdbc")
 
 df.show()
 
-### UPDATED BY SWAPNIL
-## Connection
-
-
-
-#### version2 created
-
-
-#####RRRRR
-
-
-####SSSSSSS
-
-####DDD
